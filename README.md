@@ -46,4 +46,11 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
 # Unsere_project
+
+wer das list ist dof
+PS G:\unser_projekt\Unsere_project> git push origin main
+fatal: detected dubious ownership in repository at 'G:/unser_projekt/Unsere_project'
+'G:/unser_projekt/Unsere_project' is on a file system that does not record ownership
+To add an exception for this directory, call:
