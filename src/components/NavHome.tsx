@@ -31,7 +31,7 @@ const callsToAction = [
 
 export default function Example() {
   return (
-    <header className=" bg-black/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
+    <header className=" bg-dark/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -43,37 +43,43 @@ export default function Example() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
         <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500 transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
                 Home
                     
                 </a>
-                <div className="bg-red-500 h-[1px] w-0 group-hover:w-full  transition-all duration-300 ease-in-out"></div>
+                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500 transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
                     Über Uns
                     
                 </a>
-                <div className="bg-red-500 h-[1px] w-0 group-hover:w-full transition-all duration-300 ease-in-out"></div>
+                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500 transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
                     Übungen
                     
                 </a>
-                <div className="bg-red-500 h-[1px] w-0 group-hover:w-full transition-all duration-300 ease-in-out"></div>
+                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
         </PopoverGroup>
         <div className="mr-3 hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="p-1 border border-black bg-green-500 ml-12 text-sm font-semibold text-black hover:bg-red-500 rounded-md hover:scale-105 transition">
+          <a href="#" className="p-1 border border-dark/80 bg-lightGreen ml-12 text-sm font-semibold text-black hover:bg-lightRed rounded-md hover:scale-105 transition">
             Regestriren 
           </a>
         </div>
         <div className="hidden lg:flex lg:flex-2 lg:justify-end">
-          <a href="#" className="text-sm font-semibold text-green-500 hover:text-red-500 rounded-md p-1 border border-black hover:border-red-500 hover:scale-105 transition">
+          <a href="#" className="text-sm font-semibold text-lightGreen hover:text-lightRed rounded-md p-1 border border-dark/0 hover:border-lightRed hover:scale-105 transition">
             Anmelden
           </a>
         </div>
+       
+
+
+
+
+
       </nav>
     </header>
   )
