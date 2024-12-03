@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
 import "../Styles/style_home.css";
 import InteractiveCard from "../components/interactiveCard.astro";
 
@@ -11,11 +12,13 @@ import InteractiveCard from "../components/interactiveCard.astro";
   title="LRS-Plattform"
   description="Kostenlose Online-Übungen für Kinder und Erwachsene mit LRS."
 >
-  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+  <div
+    class="relative isolate overflow-hidden bg-light dark:bg-dark py-24 sm:py-32"
+  >
     <img
-      src="../../public/bilder/desk-3076954_1280.jpg"
+      src="./bilder/desk.jpg"
       alt=""
-      class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center filter blur-md"
+      class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center filter blur-md dark:brightness-50"
     />
     <div
       class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -40,53 +43,30 @@ import InteractiveCard from "../components/interactiveCard.astro";
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2
-          class="text-5xl font-semibold tracking-tight text-dark sm:text-7xl justify-center"
+          class="text-5xl font-semibold tracking-tight text-dark dark:text-light sm:text-7xl justify-center"
         >
           Willkommen auf Lernuvo
         </h2>
-        <p class="mt-8 text-pretty text-lg font-medium text-dark sm:text-xl/8">
+        <p
+          class="mt-8 text-pretty text-lg font-medium text-dark dark:text-light sm:text-xl/8"
+        >
           Haben Sie oder hat jemand in Ihrer Familie Schwierigkeiten mit dem
           Lesen und Schreiben? Ob Kind oder Erwachsener – hier sind Sie genau
           richtig! Unsere Plattform bietet kostenlose, interaktive Übungen, die
           speziell entwickelt wurden, um Menschen mit Lese-Rechtschreib-Schwäche
           (LRS) zu unterstützen.
         </p>
-      </div>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-6">
-        <!-- Card 1 -->
-        <InteractiveCard
-          title="erfharen sie mher "
-          description=""
-          buttonTxt="übrer uns "
-        />
-        <!-- Card 2 -->
-        <div
-          class="max-w-sm p-6 rounded-lg shadow-lg bg-dark/30 backdrop-blur-lg border border-dark/20"
-        >
-          <h2 class="text-2xl font-bold text-dark mb-4">Card 2</h2>
-          <p class="text-dark/80 mb-4">
-            Diese Karte hat einen halbtransparenten Hintergrund und weiche
-            Ränder.
-          </p>
+        <!-- Buttons -->
+        <div class="mt-8 flex gap-4 justify-center lg:justify-start">
           <a
             href="#"
-            class="bg-blue-500/80 text-dark px-4 py-2 rounded-lg shadow hover:bg-blue-600/90 transition"
+            class="inline-block px-6 py-3 bg-primary text-light font-semibold text-lg rounded-lg shadow-lg hover:scale-105 hover:bg-primary/90 transition-all"
           >
-            Mehr erfahren
+            Jetzt loslegen
           </a>
-        </div>
-        <!-- Card 3 -->
-        <div
-          class="max-w-sm p-6 rounded-lg shadow-lg bg-dark/30 backdrop-blur-lg border border-dark/20"
-        >
-          <h2 class="text-2xl font-bold text-dark mb-4">Card 3</h2>
-          <p class="text-dark/80 mb-4">
-            Perfekt für moderne Webseiten und Anwendungen mit einem eleganten
-            Design.
-          </p>
           <a
             href="#"
-            class="bg-blue-500/80 text-dark px-4 py-2 rounded-lg shadow hover:bg-blue-600/90 transition"
+            class="inline-block px-6 py-3 bg-secondary text-dark font-semibold text-lg rounded-lg shadow-lg hover:scale-105 hover:bg-secondary/80 transition-all"
           >
             Mehr erfahren
           </a>
