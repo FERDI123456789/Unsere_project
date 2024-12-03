@@ -31,14 +31,13 @@ const callsToAction = [
 
 export default function Example() {
   return (
-    <header className="bg-white dark:bg-black/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
+    <header className=" bg-black/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">SpellSkill</span>
-            <span className="font-bold text-2xl dark:text-white">
-              <span className="text-green-500">Alpha</span>
-              <span className='text-red-500'>Flow</span>
+            <span className="font-bold text-2xl text-white">
+              <span className='text-red-500'>Lernuvo</span>
             </span>
           </a>
         </div>
@@ -66,12 +65,12 @@ export default function Example() {
             </div>
         </PopoverGroup>
         <div className="mr-3 hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="p-1 border dark:border-black bg-green-500 ml-12 text-sm font-semibold text-gray-900 hover:bg-red-500 dark:text-black rounded-md hover:scale-105 transition">
+          <a href="#" className="p-1 border border-black bg-green-500 ml-12 text-sm font-semibold text-black hover:bg-red-500 rounded-md hover:scale-105 transition">
             Regestriren 
           </a>
         </div>
         <div className="hidden lg:flex lg:flex-2 lg:justify-end">
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-green-500 dark:hover:text-red-500 rounded-md p-1 border dark:border-black hover:border-red-500 hover:scale-105 transition">
+          <a href="#" className="text-sm font-semibold text-green-500 hover:text-red-500 rounded-md p-1 border border-black hover:border-red-500 hover:scale-105 transition">
             Anmelden
           </a>
         </div>
