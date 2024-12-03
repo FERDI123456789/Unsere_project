@@ -58,7 +58,7 @@ export default function Example() {
                 <div className="bg-red-500 h-[1px] w-0 group-hover:w-full transition-all duration-300 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500 transition">
                     Übungen
                     
                 </a>
@@ -66,12 +66,12 @@ export default function Example() {
             </div>
         </PopoverGroup>
         <div className="mr-3 hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="p-1 bg-green-500 ml-12 text-sm font-semibold text-gray-900 dark:text-black rounded-md hover:scale-105">
+          <a href="#" className="p-1 border dark:border-black bg-green-500 ml-12 text-sm font-semibold text-gray-900 hover:bg-red-500 dark:text-black rounded-md hover:scale-105 transition">
             Regestriren 
           </a>
         </div>
         <div className="hidden lg:flex lg:flex-2 lg:justify-end">
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-green-500 rounded-md p-1 border border-green-500 hover:scale-105">
+          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-green-500 dark:hover:text-red-500 rounded-md p-1 border dark:border-black hover:border-red-500 hover:scale-105 transition">
             Anmelden
           </a>
         </div>
