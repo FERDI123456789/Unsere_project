@@ -1,5 +1,5 @@
 'use client'
-
+import '../css/global.css'
 import { useState } from 'react'
 import {
   Popover,
@@ -34,43 +34,43 @@ export default function Example() {
     <header className=" bg-dark/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">SpellSkill</span>
-            <span className="font-bold text-2xl text-white">
-              <span className='text-red-500'>Lernuvo</span>
+            <span className="font-bold text-3xl">
+              <span className='text-primary name'>Spellid</span>
             </span>
           </a>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
         <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
+                <a href="/" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
                 Home
                     
                 </a>
-                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></div>
+                <div className="bg-primary h-[1px] w-0 group-hover:w-full  transition-all duration-500 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
+                <a href="/about" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
                     Über Uns
                     
                 </a>
-                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
+                <div className="bg-primary h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-lightGreen hover:text-lightRed transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
                     Übungen
                     
                 </a>
-                <div className="bg-lightRed h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
+                <div className="bg-primary h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
         </PopoverGroup>
         <div className="mr-3 hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="p-1 border border-dark/80 bg-lightGreen ml-12 text-sm font-semibold text-black hover:bg-lightRed rounded-md hover:scale-105 transition">
+          <a href="#" className="p-1 border border-dark/80 bg-secondary ml-12 text-sm font-semibold text-black hover:bg-primary rounded-md hover:scale-105 transition">
             Regestriren 
           </a>
         </div>
         <div className="hidden lg:flex lg:flex-2 lg:justify-end">
-          <a href="#" className="text-sm font-semibold text-lightGreen hover:text-lightRed rounded-md p-1 border border-dark/0 hover:border-lightRed hover:scale-105 transition">
+          <a href="#" className="text-sm font-semibold text-secondary hover:text-primary rounded-md p-1 border border-dark/0 hover:border-primary hover:scale-105 transition">
             Anmelden
           </a>
         </div>

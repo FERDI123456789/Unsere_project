@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import NavHome from "../components/NavHome";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,8 +12,9 @@ import NavHome from "../components/NavHome";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+		<ViewTransitions />
 	</head>
-	<body class="dark:bg-gray-900">
+	<body class="bg-dark">
 		<NavHome client:idle/>
 		<slot />
 		<Footer />
