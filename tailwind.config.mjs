@@ -8,8 +8,8 @@ export default {
 				
 					light:"#f5f5f5",
 					dark:"#1b1b1b",
-					lightGreen:"#46A758",
-					lightRed:"#E54D2E",
+					primary:"#B4B4B4",
+                    Secondary:"#0090FF",
 
 				
 			}
