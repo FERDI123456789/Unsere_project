@@ -1,0 +1,137 @@
+---
+import { Picture } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { slide } from 'astro:transitions';
+import test from "../assets/test.jpg"
+import men_1 from "../assets/hannes.jpg"
+import men_2 from "../assets/ferdi.jpg"
+import side from "../assets/lrs-chat.png"
+import "../css/global.css"
+---
+
+<Layout>
+
+    <div class="relative isolate overflow-hidden bg-dark px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-secondary [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+            <defs>
+              <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y="-1" class="overflow-visible fill-secondary">
+              <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+            </svg>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          </svg>
+        </div>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-3">
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="lg:max-w-lg">
+                <p class="text-base/7 font-semibold text-white"></p>
+                <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl name">Über Uns</h1>
+                <p class="mt-6 text-xl/8 text-gray-400"></p>
+              </div>
+            </div>
+          </div>
+          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <Picture src={side}  alt="autos" format='webp' quality="max" width={1500} class="w-[20rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[42rem]"/>
+          </div>
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="max-w-xl text-base/7 text-gray-300 lg:max-w-lg">
+                <p class="font-bold border-r-4 border-primary">Ein frund von uns leidet selbst unter LRS (Lese-Rechtschreib-Schwäche) und hat bereits nach Apps und Websites gesucht, die ihm bei Rechtschreibung und Lesen helfen könnten – jedoch ohne Erfolg. Deshalb haben wir uns gedacht, warum nicht selbst eine Lösung entwickeln, zumal wir zu zweit, mit 15 und 17 Jahren, daran arbeiten könnten.</p>
+                <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                  <li transition:animate={slide({ duration: '0.4s' })}  class="border-r-4 border-primary p-1 flex gap-x-2">
+                    <svg class="mt-1 size-5 flex-none text-primary inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M13.5 4a1.5 1.5 0 0 0-3 0v.5h-1a4.5 4.5 0 0 0 0 9h5a1.5 1.5 0 0 1 0 3H7a1.5 1.5 0 0 0 0 3h3.5v.5a1.5 1.5 0 0 0 3 0v-.5h1a4.5 4.5 0 1 0 0-9h-5a1.5 1.5 0 1 1 0-3H17a1.5 1.5 0 0 0 0-3h-3.5z"/></g></svg>
+                    <span class="text-gray-200"><strong class="font-semibold text-primary block name">Kostelos.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
+                  </li>
+                  <li transition:animate={slide({ duration: '0.5s' })}  class="border-r-4 border-primary  p-1 flex gap-x-2">
+                    <svg class="mt-1 size-5 flex-none text-primary inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M8.084 2.6c.162-.365.523-.6.923-.6h7.977c.75 0 1.239.79.903 1.462L15.618 8h3.358c.9 0 1.35 1.088.714 1.724L7.737 21.677c-.754.754-2.01-.022-1.672-1.033L8.613 13H5.015a1.01 1.01 0 0 1-.923-1.42z"/></g></svg>
+                    <span class="text-gray-200"><strong class="font-semibold text-primary block name">Einer der Ersten.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
+                  </li>
+                  <li transition:animate={slide({ duration: '0.6s' })}  class="border-r-4 border-primary p-1 flex gap-x-3">
+                    <svg class="mt-1 size-5 flex-none text-primary inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 11c-2.395 0-4.575.694-6.178 1.672c-.8.488-1.484 1.064-1.978 1.69C2.358 16.976 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22q.346 0 .685-.005a1 1 0 0 0 .89-1.428A6 6 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557Q11.671 13 11 13m7.864.997a1 1 0 0 0-1.728 0l-.91 1.562l-1.766.382a1 1 0 0 0-.534 1.644l1.204 1.348l-.182 1.798a1 1 0 0 0 1.398 1.016l1.654-.73l1.654.73a1 1 0 0 0 1.398-1.016l-.182-1.799l1.204-1.347a1 1 0 0 0-.534-1.644l-1.766-.382z"/></g></svg>
+                    <span class="text-gray-200"><strong class="font-semibold text-primary block name">Du kannst uns Vertrauen.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
+                  </li>
+                </ul>
+                <div class="mt-10 w-full h-1 bg-primary"></div>
+                <h2 class="mt-10 text-2xl font-bold tracking-tight text-primary name">Kein LRS? Kein Problem.</h2>
+                <p class="mt-2">Spellid ist nicht für LRS hauptsächlich ausgelegt es ist für alle die lesen und ihre Rechtschreibung verbesern wollen :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <!-- Container -->
+        <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-20 text-white -mt-20">
+          <!-- Heading -->
+          <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
+            <h2 class="text-3xl font-bold md:text-5xl">  </h2>
+            <p class="mb-4 max-w-lg text-base text-gray-500 md:max-w-md mx-auto mt-5"> Wir sind zwar nur zu zweit aber nicht allein </p>
+          </div>
+          <!-- Contents -->
+          <div class=" grid grid-cols-1 gap-8 sm:gap-20 lg:grid-cols-2">
+            <!-- Content 1 -->
+            <div id="rainbow-shadow">
+              
+              <div class="rounded-md mb-4 flex h-72 w-full flex-col items-center justify-center ">
+                <a href="#" class=" inline-block max-w-full text-black">
+                  <Picture src={men_1}  alt="autos" format='webp' quality="max" width={1500} class="rounded-md mx-auto inline-block w-60 h-34"/>
+                </a>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-sm font-bold md:max-w-md hover:scale-95 transition hover:cursor-pointer">Shattery</p>
+                <p class="text-sm font-bold md:max-w-md"></p>
+              </div>
+            </div>
+            <!-- Content 2 -->
+            <div id="rainbow-shadow">
+              <div class="mb-4 flex h-72 w-full flex-col items-center justify-center ">
+                <a href="#" class="inline-block max-w-full text-black">
+                  <Picture src={men_2}  alt="autos" format='webp' quality="max" width={1500} class=" rounded-md mx-auto inline-block w-60 h-34"/>
+                </a>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-sm font-bold md:max-w-md">Ferdi</p>
+                <p class="text-sm font-bold md:max-w-md"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</Layout>
+
+<style>
+#rainbow-shadow {
+    position: relative;
+    padding: 1rem; /* Platz für den Inhalt */
+    border-radius: 12px; /* Runde Ecken */
+    z-index: 1; /* Sicherstellen, dass das Haupt-Element über dem Gradient liegt */
+}
+
+#rainbow-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Gleiche Ecken wie das Haupt-Element */
+    padding: 2px; /* Breite des Regenbogen-Rahmens */
+    background: linear-gradient(
+        90deg,
+        #1b1b1b,
+        lightblue,
+        lightblue,
+        #1b1b1b
+        
+    );
+    -webkit-mask: linear-gradient(black, red) content-box, linear-gradient(black, red);
+    -webkit-mask-composite: destination-out; /* Webkit-Support */
+    mask-composite: exclude; /* Standard */
+}
+
+</style>

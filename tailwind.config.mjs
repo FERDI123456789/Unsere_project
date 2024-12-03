@@ -10,7 +10,9 @@ export default {
 					dark:"#1b1b1b",
 					primary:"#B4B4B4",
                     Secondary:"#0090FF",
+					
 
+				
 				
 			}
 		},
