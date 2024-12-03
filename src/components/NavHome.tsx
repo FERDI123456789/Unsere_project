@@ -58,7 +58,7 @@ export default function Example() {
                 <div className="bg-red-500 h-[1px] w-0 group-hover:w-full transition-all duration-300 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500 transition">
+                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-green-500 hover:text-red-500transition">
                     Übungen
                     
                 </a>
