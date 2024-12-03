@@ -74,12 +74,6 @@ export default function Example() {
             Anmelden
           </a>
         </div>
-       
-
-
-
-
-
       </nav>
     </header>
   )
