@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
-import NavHome from "../components/NavHome";
+import NavHome from "../components/NavHome.tsx";
 
 const { title, description } = Astro.props;
 ---
@@ -16,7 +16,7 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="dark:bg-dark bg-light">
-    <NavHome client:idle />
+    <NavHome client:load />
 
     <slot />
     <Footer />
