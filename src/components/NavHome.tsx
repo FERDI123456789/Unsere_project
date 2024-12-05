@@ -32,7 +32,7 @@ const callsToAction = [
 export default function Example() {
   return (
     <header className=" bg-dark/80 backdrop-blur-lg fixed top-0 left-0 w-full z-10">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">SpellSkill</span>
@@ -51,14 +51,14 @@ export default function Example() {
             </div>
           <div className="group">
                 <a href="/about" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
-                    Über Uns
+                    About
                     
                 </a>
                 <div className="bg-primary h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
             </div>
           <div className="group">
-                <a href="/socials" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
-                    Übungen
+                <a href="/test" className="block rounded-lg text-base/7 group font-semibold text-secondary hover:text-primary transition">
+                    Test
                     
                 </a>
                 <div className="bg-primary h-[1px] w-0 group-hover:w-full transition-all duration-500 ease-in-out"></div>
